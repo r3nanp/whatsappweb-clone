@@ -11,4 +11,9 @@ export default createGlobalStyle`
     background: #D2DBDC;
     font-family: 'Segoe UI', Helvetica Neue, Arial, Helvetica, sans-serif, Lucida Grande, Arial, sans-serif;
   }
+
+  :root {
+    --background: #EDEDED;
+    --border: #ddd;
+  }
 `

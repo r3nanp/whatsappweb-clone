@@ -1,13 +1,18 @@
-import React from 'react';
+import React from 'react'
 
-import { Container } from './styles';
+import { Container, Header, SearchIcon, ChatList } from './styles'
 
 const LeftSide: React.FC = () => {
   return (
     <Container>
-      <h1>LeftSide</h1>
-    </Container>
-  );
-};
+      <Header>
+        <SearchIcon />
+        <input placeholder="Search or start new chat" />
+      </Header>
 
-export default LeftSide;
+      <ChatList />
+    </Container>
+  )
+}
+
+export default LeftSide
