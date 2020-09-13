@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
   Container,
@@ -12,6 +13,7 @@ import {
   ChatList,
 } from './styles'
 
+import ChatItem from '../ChatItem'
 import profileImage from '../../assets/profileimage.png'
 
 const LeftSide: React.FC = () => {
@@ -19,7 +21,7 @@ const LeftSide: React.FC = () => {
     <Container>
       <Header>
         <img src={profileImage} alt="Profile image" />
-        <div className="header-buttons">
+        <div>
           <StatusIcon />
           <ChatIcon />
           <DotsIcon />
@@ -27,11 +29,23 @@ const LeftSide: React.FC = () => {
       </Header>
 
       <SearchTab>
-        <SearchIcon />
-        <input placeholder="Search or start new chat" />
+        <div className="search-input">
+          <SearchIcon />
+          <input type="search" placeholder="Search or start new chat" />
+        </div>
       </SearchTab>
 
-      <ChatList />
+      <ChatList>
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+      </ChatList>
+
     </Container>
   )
 }

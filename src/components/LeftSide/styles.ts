@@ -10,7 +10,7 @@ export const Container = styled.div`
   max-width: 415px;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--border);
+  border-right: 1px solid var(--header);
 `
 export const Header = styled.header`
   height: 60px;
@@ -34,16 +34,41 @@ export const Header = styled.header`
 
 export const SearchTab = styled.div`
   width: 100%;
-  > input {
+  border-bottom: 1px solid var(--header);
+  padding: 5px 15px;
+
+  > div {
+    display: flex;
+    align-items: center;
     background: var(--search-background);
-    outline: 0;
-    border-radius: 15px;
-    padding-right: 32px;
-    padding-left: 65px;
+    border-radius: 20px;
+    height: 40px;
+    padding: 0 10px;
+
+    > input {
+      flex: 1;
+      border: none;
+      outline: 0;
+      background-color: transparent;
+      margin-left: 10px;
+    }
   }
 `
 
-export const ChatList = styled.div``
+export const ChatList = styled.div`
+  flex: 1;
+  background: var(--background-dark);
+  overflow-y: auto;
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scroll);
+  }
+`
 
 const iconCSS = css`
   width: 40px;
@@ -56,7 +81,8 @@ const iconCSS = css`
 `
 
 export const SearchIcon = styled(AiOutlineSearch)`
-  ${iconCSS}
+  font-size: medium;
+  color: var(--button-color);
 `
 export const StatusIcon = styled(MdDonutLarge)`
   ${iconCSS}
