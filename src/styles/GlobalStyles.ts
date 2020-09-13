@@ -13,7 +13,14 @@ export default createGlobalStyle`
   }
 
   :root {
-    --background: #EDEDED;
+    --primary: #fff;
+    --beige: #e5ddd5;
+    --header-color: #b1b3b5;
+    --background-light: #EDEDED;
+    --button-color: #919191;
+    --background-dark: #090e11;
+    --search-background: #323739;
     --border: #ddd;
+    --header: #2a2f32;
   }
 `
