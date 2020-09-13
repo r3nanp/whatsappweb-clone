@@ -10,7 +10,7 @@ export const Container = styled.div`
   max-width: 415px;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--header);
+  border-right: 1px solid var(--border-color);
 `
 export const Header = styled.header`
   height: 60px;
@@ -40,7 +40,7 @@ export const SearchTab = styled.div`
   > div {
     display: flex;
     align-items: center;
-    background: var(--search-background);
+    background: var(--chat-list);
     border-radius: 20px;
     height: 40px;
     padding: 0 10px;
@@ -48,6 +48,7 @@ export const SearchTab = styled.div`
     > input {
       flex: 1;
       border: none;
+      color: var(--primary);
       outline: 0;
       background-color: transparent;
       margin-left: 10px;
@@ -57,7 +58,7 @@ export const SearchTab = styled.div`
 
 export const ChatList = styled.div`
   flex: 1;
-  background: var(--background-dark);
+  background: var(--chat-list);
   overflow-y: auto;
 
   ::-webkit-scrollbar {

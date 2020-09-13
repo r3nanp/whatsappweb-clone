@@ -13,7 +13,7 @@ export default createGlobalStyle`
   }
 
   h1, h2, strong, span, p {
-    color: var(--primary);
+    color: rgba(241, 241, 242, 0.88);
   }
 
   :root {
@@ -23,12 +23,15 @@ export default createGlobalStyle`
     --header-color: #b1b3b5;
     --button-color: #919191;
     --background-dark: #090e11;
-    --search-background: #323739;
-    --border: #eee;
+    --border: rgba(42,50,55,1);
     --header: #2a2f32;
-    --chat-hover: #f5f5f5;
     --gray: #999;
+    --active-tab-marker: #054740;
 
+
+    --chat-list: rgba(19, 28, 33, 1);
+
+    --border-color: rgba(60, 66, 71, 1);
     --scroll: hsla(0,0%,100%,.16);
   }
 `
