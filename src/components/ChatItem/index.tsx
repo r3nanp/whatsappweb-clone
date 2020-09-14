@@ -10,7 +10,7 @@ const ChatItem: React.FC = () => {
 
       <Chats>
         <ChatLine>
-          <Name>Renan Pereira</Name>
+          <Name>Renan</Name>
           <Date>19:00</Date>
         </ChatLine>
 
