@@ -29,6 +29,17 @@ export const Header = styled.header`
 
   > div {
     display: flex;
+
+    .online {
+      width: 7px;
+      height: 7px;
+      border-radius: 3.5px;
+      background: green;
+      position: relative;
+      z-index: 100;
+      top: 9px;
+      right: 17px;
+    }
   }
 `
 

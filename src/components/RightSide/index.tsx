@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
-import { Container, LinkContainer } from './styles'
+import { Container, LinkContainer, Line, LaptopIcon } from './styles'
 import whatsappIntro from '../../assets/whatsappIntro.jpg'
 
 const RightSide: React.FC = () => {
@@ -14,9 +15,14 @@ const RightSide: React.FC = () => {
       </h2>
 
       <LinkContainer>
-        <p>WhatsApp is available for Windows. {''}
-          <a href="#">Get it here.</a>
-        </p>
+        <Line />
+        <div>
+          <LaptopIcon />
+          <h1>
+            WhatsApp is available for Windows and Mac. {''}
+            <a href="#">Get it here.</a>
+          </h1>
+        </div>
       </LinkContainer>
     </Container>
   )

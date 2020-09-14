@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { MdLaptopMac } from 'react-icons/md'
 
 export const Container = styled.div`
   flex: 1;
@@ -31,12 +32,28 @@ export const Container = styled.div`
 `
 
 export const LinkContainer = styled.div`
-  margin-top: 32px;
-  > p {
-
-    > a {
-      color: green;
-      text-decoration: none;
+  > div {
+    display: flex;
+    > h1 {
+      font-size: 14px;
+      font-weight: normal;
+      > a {
+        color: green;
+        text-decoration: none;
+      }
     }
   }
+`
+
+export const Line = styled.div`
+  margin-bottom: 32px;
+  margin-top: 32px;
+  border-top: 1px solid var(--border-color);
+`
+
+export const LaptopIcon = styled(MdLaptopMac)`
+  fill: rgba(241, 241, 242, 0.88);
+  width: 21px;
+  height: 18px;
+  margin-right: 10px;
 `

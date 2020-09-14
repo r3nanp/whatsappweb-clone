@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState } from 'react'
+import React from 'react'
 
 import {
   Container,
@@ -23,6 +23,8 @@ const LeftSide: React.FC = () => {
         <img src={profileImage} alt="Profile image" />
         <div>
           <StatusIcon />
+          <div className="online"/>
+
           <ChatIcon />
           <DotsIcon />
         </div>

@@ -15,7 +15,7 @@ const ChatItem: React.FC = () => {
         </ChatLine>
 
         <LastMessage>
-          <p>Roi, tá on?</p>
+          <p>Oi, tá on?</p>
         </LastMessage>
       </Chats>
     </Container>
